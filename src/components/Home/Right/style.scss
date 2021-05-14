@@ -1,0 +1,75 @@
+@import '../../../styles/index.scss';
+
+.right{
+    padding: 106px 120px 153px 120px;
+
+   &-container{
+
+
+
+    
+
+     }
+     &-Heading{
+        padding-bottom: 67px;
+        align-self: center;
+        display: flex;
+    justify-content: center;
+
+        .Heading-content{
+            max-width: 636px;
+            position: relative;
+        h3{
+            margin-bottom: 18px;
+            color: #0059EF;
+        }
+        .right-Heading-Image{
+            position: absolute;
+            right: 0;
+            display: flex;
+    flex-direction: row-reverse;
+        }
+    }
+    }
+
+
+
+
+
+
+    &-Cards{
+        display: flex;
+        justify-content: space-between;
+        .card-image{
+            background-image: url("../../../images/Home/Right/Rectangle\ Copy\ 14.svg");
+            position: relative;
+            max-width: 287px;
+            height: 336px;
+            width: 100%;
+           
+
+
+            &-bg{
+                display: flex;
+                flex-direction: column;
+                padding-left: 58px;
+                padding-right: 58px;
+                padding-top: 49px;
+                justify-content: space-between;
+                align-items: center;
+    text-align: center;
+                img{
+                    width: fit-content;
+                    padding-bottom: 35px;
+                }
+                .card-content{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    
+                }
+
+            }
+        }
+    }
+}

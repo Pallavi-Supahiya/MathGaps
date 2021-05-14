@@ -1,0 +1,22 @@
+@import "../../../styles/index.scss";
+
+.increase{
+    padding: 70px 121px 96px 202px;
+
+background-color: #fff;
+    &-container{
+display: flex;
+justify-content: space-between;
+
+
+
+.increase-content{
+    margin-top: 71px;
+    max-width: 591px;
+    h2{
+        margin-bottom: 25px;
+        color:  #252525;
+    }
+}
+    }
+}

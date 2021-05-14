@@ -1,0 +1,46 @@
+
+.Hero{
+    position: relative;
+     overflow: hidden; 
+    &-Banner{
+        width: 100%;  
+    }
+    &-Container{
+        position: absolute;
+        top: 0;
+        display: flex;
+    justify-content: space-between;
+    padding-left: 221px;
+    padding-right: 172px;
+    padding-top: 111px;
+        
+    .Hero-Content{
+        width: 40%;
+        margin-top: 50px;
+        h1{
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 23px;
+            color: #fff;
+            opacity: 0.6;
+        }
+    }
+    .Hero-Image{
+        position: relative;
+
+
+        .Hero-InnerImage{
+            position: absolute;
+            top: 10%;
+            left: 15%;
+        }
+    }
+
+
+
+    }
+    }
+   
+    

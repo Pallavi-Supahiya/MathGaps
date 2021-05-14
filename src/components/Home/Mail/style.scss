@@ -1,0 +1,57 @@
+@import "../../../styles/index.scss";
+
+.mail{
+    padding: 140px 0 98px 120px;
+
+background-color: #fff;
+    &-container{
+display: flex;
+justify-content: space-between;
+
+
+
+.mail-content{
+    margin-top: 59px;
+    max-width: 810px;
+    
+    width: 100%;
+
+    span{
+        font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+margin-bottom: 12px;
+color: #0059EF;
+    }
+    h2{
+        margin-bottom: 80px;
+        color:  #252525;
+    }
+    .mail-form{
+        display: flex;
+        flex-direction: column;
+        input{
+            border: none;
+            border-bottom: 1px solid #0059EF;
+            width: 100%;
+            padding-bottom: 18.5px;
+            margin-bottom: 59.5px;
+        }
+        .button-div{
+            display: flex;
+            flex-flow: row-reverse;
+            button{
+                font-size: 24px;
+line-height: 34px;
+                    border: none;
+                    background-color: transparent;
+                    text-decoration-line: underline;
+
+color: #0059EF;
+            }
+        }
+        }
+    }
+}
+    }

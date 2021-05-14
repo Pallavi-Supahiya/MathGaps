@@ -1,0 +1,22 @@
+@import "../../../styles/index.scss";
+
+.first{
+    padding: 49px 197px 50px 147px;
+
+background-color: #FAFAFA;
+    &-container{
+display: flex;
+justify-content: space-between;
+
+
+
+.first-content{
+    margin-top: 101px;
+    max-width: 508px;
+    h2{
+        margin-bottom: 28px;
+        color:  #252525;
+    }
+}
+    }
+}
