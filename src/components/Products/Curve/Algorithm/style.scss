@@ -1,0 +1,46 @@
+@import "../../../../styles/index.scss";
+
+.algorithm{
+    .algo-container{
+        padding: 27px 75px 90px 49px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+    .algo-heading{
+        padding-bottom: 49px;
+        color: #0059EF;
+        h3{
+            font-weight: 700;
+        }
+    }
+    .algo-content{
+        display: flex;
+    // flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .algo-image{
+        width: 50%;
+    }
+    .algo-text{
+        width: 50%;
+        margin-left: 105px;
+        h6{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 34px;
+        }
+        .text1, .text3{
+            max-width: 428px;
+            width: auto;
+        }
+        .text2{
+            margin: 53px 0 44px 0;
+            max-width: 390px;
+            width: auto;
+        }
+
+    }
+    }
+}

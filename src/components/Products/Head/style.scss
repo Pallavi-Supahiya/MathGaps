@@ -1,0 +1,31 @@
+@import "../../../styles//index.scss";
+.all{
+
+
+
+    &-head{
+        max-width: 1440px;
+        margin: auto;
+        max-height: 213px;
+    overflow: hidden;
+    position: relative;
+        background-image: url("../../../images/Products/Head/blue.svg");
+    }
+    &-heading{
+        padding: 27px 0 27px 16px;
+        color: #fff;
+    }
+    &-images{
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        right: -38%;
+        img{
+            width: 40%;
+        }
+    .image2{
+        margin-left: -150px;
+    }
+    }
+    }
