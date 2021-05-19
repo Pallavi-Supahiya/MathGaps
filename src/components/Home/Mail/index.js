@@ -6,6 +6,7 @@ import "./style.scss"
 const Mail = () => {
     return (
         <div className="mail">
+             <div className="container">
             <div className="mail-container">
                 <div className="mail-content">
                     <div className="mail-heading">
@@ -24,7 +25,7 @@ const Mail = () => {
                     <img src={Image} alt="mailbox" />
                 </div>
             </div>
-            
+           </div> 
         </div>
     )
 }

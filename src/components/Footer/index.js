@@ -11,6 +11,7 @@ import "./style.scss"
 const footer = () => {
     return (
      <Footer>
+        <div className="container">
 <FooterContainer>
     <Footer1>
         <FT1>
@@ -45,21 +46,33 @@ const footer = () => {
         <FT4><span>© MATH GAPS PTY LTD 2021</span></FT4>
     </Footer2>
 </FooterContainer>
+</div>
      </Footer>
     )
 }
 
 export default footer
 
-const Footer = styled.div`    padding: 40px 120px;
+const Footer = styled.div`    padding: -10px 14px;
 background-color:#252525`;
 const FooterContainer = styled.div` `;
 const Footer1 = styled.div`
 display:flex;
 justify-content: space-between ;
-align-items: center;`;
+align-items: center;
+@media only screen and (max-width: 1080px) {
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  }
+  @media only screen and (max-width: 800px) {
+  justify-content: center;
+  }`;
 const FT1 = styled.div` `;
-const FT2 = styled.div`display:flex; `;
+const FT2 = styled.div`display:flex; 
+@media only screen and (max-width: 627px) {
+  padding: 7px 0px;
+}`;
 const NavLink = styled(Link)` `;
 const Links = styled(Link)`
 text-decoration:none;

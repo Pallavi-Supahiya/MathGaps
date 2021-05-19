@@ -6,7 +6,9 @@
 
 .footer-span{
     padding:0px 27px;
- 
+    @media only screen and (max-width: 576px) {
+    padding: 0px 12px;
+    }
 }
 .footer-span:last-of-type{
     padding: none;
@@ -14,7 +16,9 @@
 }
 .footer-icons{
     margin-right: 29.02px;
+
+
 }
 .footer-icons:last-of-type{
-    margin-right: none;
+    margin-right: 0 !important;
 }

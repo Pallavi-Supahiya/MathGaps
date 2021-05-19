@@ -26,4 +26,7 @@ export const Button = styled(Link)`
    
    
   }
+  @media only screen and (max-width: 576px) {
+    font-size: ${({ big }) => (big ? "18px" : "14px")};
+  }
 `

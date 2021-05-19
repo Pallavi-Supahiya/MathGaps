@@ -1,20 +1,27 @@
 @import '../../../styles/index.scss';
 
 .right{
-    padding: 106px 120px 153px 120px;
+   
 
-   &-container{
+   &-Container{
 
+    padding: 56px 14px 103px 14px;
 
-
-    
+    @media only screen and (max-width: 768px) {
+        padding: 0px 0px 60px 0px;
+        }
 
      }
      &-Heading{
         padding-bottom: 67px;
         align-self: center;
         display: flex;
-    justify-content: center;
+        justify-content: center;
+        @media only screen and (max-width: 576px) {
+            text-align: center;
+            padding: 20px;
+            padding-bottom: 67px;
+        }
 
         .Heading-content{
             max-width: 636px;
@@ -39,13 +46,17 @@
 
     &-Cards{
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 17px;
+        column-gap: 17px;
         .card-image{
             background-image: url("../../../images/Home/Right/Rectangle\ Copy\ 14.svg");
             position: relative;
             max-width: 287px;
             height: 336px;
-            width: 100%;
+            width: 95%;
+            flex: 0 0 25%;
            
 
 
@@ -57,18 +68,33 @@
                 padding-top: 49px;
                 justify-content: space-between;
                 align-items: center;
-    text-align: center;
+                text-align: center;
                 img{
                     width: fit-content;
                     padding-bottom: 35px;
                 }
-                .card-content{
-                    font-weight: 700;
-                    font-size: 18px;
-                    line-height: 28px;
-                    
-                }
+            
 
+            }
+            .card-content{
+                position: absolute;
+                top: 55%;
+                padding: 0 50px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                
+    text-align: center;
+
+                @media only screen and (max-width: 1200px) {
+                padding: 0 40px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 23px;
+                }
+                @media only screen and (max-width: 992px){
+                padding: 0 34px;
+                }
             }
         }
     }

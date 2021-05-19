@@ -13,7 +13,6 @@ const Right = () => {
     let data = [
         {
           img: textbook,
-        
           content: "Available for students in Years 7-11",
           
         },
@@ -40,6 +39,7 @@ const Right = () => {
     
     return (
         <div className="right">
+           <div className="container">
             <div className="right-Container">
                 <div className="right-Heading">
                 <div className="Heading-content">
@@ -56,10 +56,10 @@ const Right = () => {
                           <div className="card-image">
                             <div className="card-image-bg">
                               <img className="card-icon" src={element.img}></img>
-                         
+                              </div>
                           
                           <span className="card-content">{element.content}</span>
-                          </div>
+                          
                           </div>
                         
                       )
@@ -67,7 +67,7 @@ const Right = () => {
 
                 </div>
             </div>
-            
+            </div>
         </div>
     )
 }

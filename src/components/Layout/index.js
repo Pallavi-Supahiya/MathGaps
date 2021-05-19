@@ -3,7 +3,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 
-import Header from "../Head"
+import Header from "../Header"
 import Footer from "../Footer"
 
 
