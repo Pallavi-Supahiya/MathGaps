@@ -1,24 +1,27 @@
-.nav{
-   
-    border-right: 1px solid #fff;
+.footer {
+  background-color: #252525;
+
+  .container {
+  }
 }
 
+.nav {
+  border-right: 1px solid #fff;
+}
 
-.footer-span{
-    padding:0px 27px;
-    @media only screen and (max-width: 576px) {
+.footer-span {
+  padding: 0px 27px;
+  @media only screen and (max-width: 576px) {
     padding: 0px 12px;
-    }
+  }
 }
-.footer-span:last-of-type{
-    padding: none;
-    border-right: none;
+.footer-span:last-of-type {
+  padding: none;
+  border-right: none;
 }
-.footer-icons{
-    margin-right: 29.02px;
-
-
+.footer-icons {
+  margin-right: 29.02px;
 }
-.footer-icons:last-of-type{
-    margin-right: 0 !important;
+.footer-icons:last-of-type {
+  margin-right: 0 !important;
 }

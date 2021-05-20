@@ -1,53 +1,51 @@
 @import "../../../styles/index.scss";
 
-.learn{
-   
-
-background-color: #FAFAFA;
-    &-container{
-        padding: 41px 102px 41px 47px;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-align-items: center;
-@media only screen and (max-width: 992px) {
-    padding: 20px 0px 20px 0px;
-}
-
-.learn-content{
-
-    max-width: 508px;
-    width: 50%;
-    h2{
-        margin-bottom: 21px;
-        color:  #252525;
-    }
-}
-.learn-image{
-    width: 50%;
+.learn {
+  .container {
+    background-color: #fafafa;
+  }
+  &-container {
+    padding: 41px 102px 41px 47px;
     display: flex;
-    justify-content: flex-end;
-}
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    @media only screen and (max-width: 992px) {
+      padding: 20px 0px 20px 0px;
+    }
 
-@media only screen and (max-width: 768px) {
-    justify-content: center;
-    text-align: center;
-    .learn-content{
+    .learn-content {
+      max-width: 508px;
+      width: 50%;
+      h2 {
+        margin-bottom: 21px;
+        color: #252525;
+      }
+    }
+    .learn-image {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    @media only screen and (max-width: 768px) {
+      justify-content: center;
+      text-align: center;
+      .learn-content {
         width: 100%;
         @media only screen and (max-width: 575px) {
-            padding: 20px;
+          padding: 20px;
         }
-    }
-    .learn-image{
+      }
+      .learn-image {
         width: 100%;
         display: block;
-        img{
-            @media only screen and (max-width: 575px) {
-             width: 70%;
-            } 
+        img {
+          @media only screen and (max-width: 575px) {
+            width: 70%;
+          }
         }
+      }
     }
-}
-
-    }
+  }
 }

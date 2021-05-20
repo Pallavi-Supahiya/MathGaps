@@ -1,20 +1,15 @@
 @import "../../styles/index.scss";
 
-.navbar{
+.navbar {
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
-
-    .container{
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-
-    &-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-    }
-
-
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
 }

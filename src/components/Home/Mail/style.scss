@@ -1,108 +1,101 @@
 @import "../../../styles/index.scss";
 
-.mail{
-   
+.mail {
+  .container {
+    background-color: #fff;
+  }
+  .container {
+    @media only screen and (min-width: 768px) {
+      padding-right: 0;
+    }
+  }
+  &-container {
+    padding: 90px 0 48px 14px;
+    display: flex;
+    justify-content: space-between;
 
-background-color: #fff;
-.container{
-   
-    
-@media only screen and (min-width: 768px) {
-    padding-right: 0;
-}
-}
-    &-container{
-        padding: 90px 0 48px 14px;
-display: flex;
-justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: 992px) {
+      padding: 70px 0 40px 0px;
+    }
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
 
-align-items: center;
-@media only screen and (max-width: 992px) {
-    padding: 70px 0 40px 0px;
-}
-@media only screen and (max-width: 768px) {
-    flex-wrap: wrap;
-}
+    .mail-content {
+      max-width: 810px;
 
-
-.mail-content{
-  
-    max-width: 810px;
-    
-    width: 60%;
-    @media only screen and (min-width: 1440px) {
+      width: 60%;
+      @media only screen and (min-width: 1440px) {
         width: 100%;
-    }
+      }
 
-    span{
+      span {
         font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-text-align: center;
-margin-bottom: 12px;
-color: #0059EF;
-    }
-    h2{
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 12px;
+        color: #0059ef;
+      }
+      h2 {
         margin-bottom: 80px;
-        color:  #252525;
-    }
-    .mail-form{
+        color: #252525;
+      }
+      .mail-form {
         display: flex;
         flex-direction: column;
-        input{
+        input {
+          border: none;
+          border-bottom: 1px solid #0059ef;
+          width: 100%;
+          padding-bottom: 18.5px;
+          margin-bottom: 59.5px;
+        }
+        .button-div {
+          display: flex;
+          flex-flow: row-reverse;
+          button {
+            font-size: 24px;
+            line-height: 34px;
             border: none;
-            border-bottom: 1px solid #0059EF;
-            width: 100%;
-            padding-bottom: 18.5px;
-            margin-bottom: 59.5px;
-        }
-        .button-div{
-            display: flex;
-            flex-flow: row-reverse;
-            button{
-                font-size: 24px;
-line-height: 34px;
-                    border: none;
-                    background-color: transparent;
-                    text-decoration-line: underline;
+            background-color: transparent;
+            text-decoration-line: underline;
 
-color: #0059EF;
-@media only screen and (max-width: 576px) {
-        font-size: 18px;
-        line-height: 30px;
-    
-}
+            color: #0059ef;
+            @media only screen and (max-width: 576px) {
+              font-size: 18px;
+              line-height: 30px;
             }
+          }
         }
-        }
+      }
     }
-    .mail-image{
-        width: 40%;
+    .mail-image {
+      width: 40%;
     }
-    
-@media only screen and (max-width: 768px) {
-    justify-content: center;
-    text-align: center;
-    padding: 0px 0 40px 0px;
-    .mail-content{
+
+    @media only screen and (max-width: 768px) {
+      justify-content: center;
+      text-align: center;
+      padding: 0px 0 40px 0px;
+      .mail-content {
         width: 100%;
         @media only screen and (max-width: 576px) {
-            padding: 20px;
+          padding: 20px;
         }
-    }
-    .mail-image{
+      }
+      .mail-image {
         width: 100%;
-        img{
-            @media only screen and (max-width: 575px) {
-             width: 70%;
-            } 
+        img {
+          @media only screen and (max-width: 575px) {
+            width: 70%;
+          }
         }
+      }
     }
-}
-@media only screen and (max-width: 576px) {
-    padding-bottom: 20px;
-  
-}
-
-}
+    @media only screen and (max-width: 576px) {
+      padding-bottom: 20px;
     }
+  }
+}

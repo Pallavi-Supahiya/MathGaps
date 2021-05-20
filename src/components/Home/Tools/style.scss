@@ -1,101 +1,99 @@
 @import "../../../styles/index.scss";
 
-.tools{
-    background-color: #F2F2F2;
-   
+.tools {
+  .container {
+    background-color: #f2f2f2;
+  }
 
-    &-container{
-        padding: 51px 0px 128px 0px;
-        @media only screen and (max-width: 768px) {
-        padding: 0px 0px 60px 0px;
+  &-container {
+    padding: 51px 0px 128px 0px;
+    @media only screen and (max-width: 768px) {
+      padding: 0px 0px 60px 0px;
+    }
+    .tools-Heading {
+      padding-bottom: 124px;
+      align-self: center;
+      display: flex;
+      justify-content: center;
+      @media only screen and (max-width: 576px) {
+        text-align: center;
+        padding: 20px;
+        padding-bottom: 124px;
+      }
+
+      .tools-Heading-content {
+        max-width: 636px;
+        position: relative;
+        h3 {
+          margin-bottom: 18px;
+          color: #0059ef;
         }
-        .tools-Heading{
-            padding-bottom: 124px;
-            align-self: center;
-            display: flex;
-        justify-content: center;
+        .tools-Heading-Image {
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  &-Cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    column-gap: 20px;
+    .tools-card {
+      max-width: 363px;
+      height: 471px;
+      flex: 0 0 33.333333%;
+    }
+    .tools-card-image {
+      background-image: url("../../../images/Home/Tools/Rectangle.svg");
+      position: relative;
+
+      width: 100%;
+
+      &-bg {
+        position: absolute;
+        top: -20%;
+        right: 22%;
+      }
+    }
+    .tools-card-data {
+      padding-top: 100px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .tools-card-number {
+        padding-bottom: 24px;
+      }
+      .tools-card-heading {
+        padding-bottom: 20px;
+        span {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 34px;
+        }
+      }
+      .tools-card-content {
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 400;
+        padding: 0 70px 0 70px;
+      }
+    }
+    .tools-button {
+      padding: 44px;
+      .tools-btn {
+        padding: 3px 101px;
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 700;
         @media only screen and (max-width: 576px) {
-            text-align: center;
-            padding: 20px;
-            padding-bottom: 124px;
+          padding: 3px 90px;
+          font-size: 18px;
         }
-        
-        .tools-Heading-content{
-            max-width: 636px;
-            position: relative;
-        h3{
-            margin-bottom: 18px;
-            color: #0059EF;
-        }
-        .tools-Heading-Image{
-            position: absolute;
-          
-        }
+      }
     }
-        }
-    }
-    
-
-    &-Cards{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        row-gap: 80px;
-        column-gap: 20px;
-        .tools-card{
-            max-width: 363px;
-            height: 471px;
-              flex: 0 0 33.333333%;
-        }
-        .tools-card-image{
-            background-image: url("../../../images/Home/Tools/Rectangle.svg");
-            position: relative;
-           
-            width: 100%;
-          
-
-            &-bg{
-                position: absolute;
-                top: -20%;
-                right: 22%;
-            }
-        }
-        .tools-card-data{
-            padding-top: 100px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .tools-card-number{
-                padding-bottom: 24px;
-            }
-            .tools-card-heading{
-                padding-bottom: 20px;
-                span{
-                    font-weight: 700;
-                    font-size: 22px;
-                    line-height: 34px;
-                }
-            }
-            .tools-card-content{
-                font-size: 18px;
-                line-height: 34px;
-                font-weight: 400;
-                padding: 0 70px 0 70px;
-            }
-        }
-        .tools-button{
-            padding: 44px;
-            .tools-btn{
-                padding: 3px 101px;
-                font-size: 24px; 
-                line-height: 34px;
-                font-weight: 700;
-                @media only screen and (max-width: 576px) {
-                padding: 3px 90px;
-                font-size: 18px;
-                }
-            }
-        }
-    }
+  }
 }

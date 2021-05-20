@@ -1,28 +1,24 @@
+import React from "react";
+import PropTypes from "prop-types";
 
-import React from "react"
-import PropTypes from "prop-types"
-
-
-import Header from "../Header"
-import Footer from "../Footer"
-
+import Header from "../Header";
+import Footer from "../Footer";
 
 class Layout extends React.Component {
   render() {
-    const { children } = this.props
+    const { children } = this.props;
     return (
       <>
-        <Header/>
+        <Header />
         <main>{children}</main>
-        <Footer/>
+        <Footer />
       </>
-    )
+    );
   }
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
- 
-}
+};
 
-export default Layout
+export default Layout;

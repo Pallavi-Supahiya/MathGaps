@@ -1,60 +1,57 @@
 @import "../../../styles/index.scss";
 
-.first{
-    
+.first {
+  .container {
+    background-color: #fafafa;
+  }
 
-background-color: #FAFAFA;
-    &-container{
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-padding: 0 91px 0 41px;
-@media only screen and (max-width: 992px) {
-    padding: 20px 0px 20px 0px;
-}
-
-
-align-items: center;
-
-.first-content{
-   
-    max-width: 548px;
-    width: 50%;
-    @media only screen and (min-width: 1440px) {
-        width: 100%;
-    }
-
-    
-    h2{
-        margin-bottom: 28px;
-        color:  #252525;
-    }
-}
-.first-image{
-    width: 50%;
+  &-container {
     display: flex;
-    justify-content: flex-end;
-}
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 91px 0 41px;
+    @media only screen and (max-width: 992px) {
+      padding: 20px 0px 20px 0px;
+    }
 
-@media only screen and (max-width: 768px) {
-    justify-content: center;
-    text-align: center;
-    .first-content{
+    align-items: center;
+
+    .first-content {
+      max-width: 548px;
+      width: 50%;
+      @media only screen and (min-width: 1440px) {
+        width: 100%;
+      }
+
+      h2 {
+        margin-bottom: 28px;
+        color: #252525;
+      }
+    }
+    .first-image {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    @media only screen and (max-width: 768px) {
+      justify-content: center;
+      text-align: center;
+      .first-content {
         width: 100%;
         @media only screen and (max-width: 575px) {
-            padding: 20px;
+          padding: 20px;
         }
-    }
-    .first-image{
+      }
+      .first-image {
         width: 100%;
         display: block;
-        img{
-            @media only screen and (max-width: 575px) {
-             width: 70%;
-            } 
+        img {
+          @media only screen and (max-width: 575px) {
+            width: 70%;
+          }
         }
+      }
     }
-}
-
-    }
+  }
 }

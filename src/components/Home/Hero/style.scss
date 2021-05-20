@@ -1,88 +1,83 @@
-
-.Hero{
-    position: relative;
-     overflow: hidden; 
-     background-color: #F2F2F2;
-    &-Banner{
-        width: 100%;  
-        @media only screen and (max-width: 575px) {
-        width: auto;
-        }
+.Hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  .container {
+    background-color: #f2f2f2;
+  }
+  &-Banner {
+    width: 100%;
+    @media only screen and (max-width: 575px) {
+      width: auto;
     }
-    &-Container{
-        max-width: 1440px;
-        position: absolute;
-        align-items: center;
-        top: 0;
-        display: flex;
-        flex-wrap: wrap;
+  }
+  &-Container {
+    max-width: 1440px;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 115px;
     padding-right: 66px;
     padding-top: 61px;
     @media only screen and (max-width: 992px) {
-        padding-left: 60px;
+      padding-left: 60px;
     }
     @media only screen and (max-width: 768px) {
       padding-right: 0;
       padding-left: 0;
       padding-top: 30px;
-        }
-
-        
-    .Hero-Content{
-        max-width: 639px;
-        width: 49%;
-      
-        h1{
-            color: #fff;
-            margin-bottom: 20px;
-        }
-        p{
-            max-width: 426px;
-            margin-bottom: 23px;
-            color: #fff;
-            opacity: 0.6;
-        }
- 
     }
-    .Hero-Image{
-        
-        position: relative;
-        width: 51%;
-        @media only screen and (max-width: 575px) {
-        
-        }
-img{
-    width: 100%;
-}
 
-        .Hero-InnerImage{
-            position: absolute;
-          
-            top: 10%;
-            left: 18%;
-            right: 18%;
-            bottom: 10%;
-            img{
-                width: 100%;
-            }
-           
+    .Hero-Content {
+      max-width: 639px;
+      width: 49%;
+
+      h1 {
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      p {
+        max-width: 426px;
+        margin-bottom: 23px;
+        color: #fff;
+        opacity: 0.6;
+      }
+    }
+    .Hero-Image {
+      position: relative;
+      width: 51%;
+      @media only screen and (max-width: 575px) {
+      }
+      img {
+        width: 100%;
+      }
+
+      .Hero-InnerImage {
+        position: absolute;
+
+        top: 10%;
+        left: 18%;
+        right: 18%;
+        bottom: 10%;
+        img {
+          width: 100%;
         }
+      }
     }
 
     @media only screen and (max-width: 575px) {
-        justify-content: center;
-        .Hero-Content, .Hero-Image{
-            width: 70%;
-            text-align: center;
-        }
-        .Hero-Image{
-            margin-top: 50px;
-        }
+      justify-content: center;
+      .Hero-Content,
+      .Hero-Image {
+        width: 70%;
+        text-align: center;
+      }
+      .Hero-Image {
+        margin-top: 50px;
+      }
     }
-
-    }
-    }
-   
-    
+  }
+}

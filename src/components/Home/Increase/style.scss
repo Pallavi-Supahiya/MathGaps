@@ -1,50 +1,48 @@
 @import "../../../styles/index.scss";
 
-.increase{
-  
-
-background-color: #fff;
-    &-container{
-        padding: 20px 15px 46px 96px;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-align-items: center;
-@media only screen and (max-width: 992px) {
-    padding: 20px 0px 20px 0px;
+.increase {
+  .container {
+    background-color: #fff;
+  }
+  &-container {
+    padding: 20px 15px 46px 96px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    @media only screen and (max-width: 992px) {
+      padding: 20px 0px 20px 0px;
     }
 
-.increase-content{
-   
-    max-width: 591px;
-    width: 50%;
-    h2{
+    .increase-content {
+      max-width: 591px;
+      width: 50%;
+      h2 {
         margin-bottom: 25px;
-        color:  #252525;
+        color: #252525;
+      }
     }
-}
-.increase-image{
-    width: 50%;
-}
+    .increase-image {
+      width: 50%;
+    }
 
-@media only screen and (max-width: 768px) {
-    justify-content: center;
-    text-align: center;
-    .increase-content{
+    @media only screen and (max-width: 768px) {
+      justify-content: center;
+      text-align: center;
+      .increase-content {
         width: 100%;
         @media only screen and (max-width: 575px) {
-            padding: 20px;
+          padding: 20px;
         }
-    }
-    .increase-image{
+      }
+      .increase-image {
         width: 100%;
-        img{
-            @media only screen and (max-width: 575px) {
-             width: 70%;
-            } 
+        img {
+          @media only screen and (max-width: 575px) {
+            width: 70%;
+          }
         }
+      }
     }
-}
-
-    }
+  }
 }
