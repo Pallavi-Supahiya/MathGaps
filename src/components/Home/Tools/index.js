@@ -6,6 +6,7 @@ import image3 from "../../../images/Home/Tools/Customer.svg";
 import number from "../../../images/Home/Tools/1.svg";
 import Bg from "../../../images/Home/Tools/Rectangle.svg";
 import { Button } from "../../Button";
+import dots from "../../../images/dots.png"
 
 import "./style.scss";
 
@@ -36,7 +37,11 @@ const Tools = () => {
 
   return (
     <div className="tools">
+      
       <div className="container">
+      <img className="dots-up" src={dots} alt="..." />
+        <img className="dots-down" src={dots} alt="..." />
+       
         <div className="tools-container">
           <div className="tools-Heading">
             <div className="tools-Heading-content">

@@ -12,7 +12,7 @@ const Assistant = () => {
           </div>
 
           <div className="assistant-content">
-            <div className="assistant-text">
+            <div className="assistant-box"> <div className="assistant-text">
               <h6 className="text1">
                 Vastly improve in-class comprehension with a tool to support
                 students learning new content.
@@ -21,7 +21,8 @@ const Assistant = () => {
                 Students enter a new topic into the platform and can fill any
                 gaps in pre-requsite understanding prior to class.
               </h6>
-            </div>
+            </div></div>
+           
             <div className="assistant-image">
               <img className="assistant-img" src={image} alt="laptop" />
             </div>

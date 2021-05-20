@@ -15,7 +15,7 @@ const Report = () => {
           </div>
 
           <div className="report-content">
-            <div className="report-text">
+            <div className="report-box"> <div className="report-text">
               <h6 className="text1">
                 Recieve granular performance data across year levels, topics and
                 skills.
@@ -24,7 +24,8 @@ const Report = () => {
                 Progressive updating as new skills are learnt using the Learning
                 Roadmap & Study Assistant.
               </h6>
-            </div>
+            </div></div>
+           
             <div className="report-image">
               <img className="report-img" src={image} alt="laptop" />
             </div>

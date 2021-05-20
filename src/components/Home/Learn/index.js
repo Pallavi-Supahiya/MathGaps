@@ -3,6 +3,7 @@ import Image from "../../../images/Home/Learn/Image.svg";
 import { Button } from "../../Button";
 
 import { graphql, useStaticQuery } from "gatsby";
+import dots from "../../../images/dots.png"
 import "./style.scss";
 
 const query = graphql`
@@ -25,6 +26,8 @@ const Learn = () => {
   return (
     <div className="learn">
       <div className="container">
+      <img className="dots-up" src={dots} alt="..." />
+        <img className="dots-down" src={dots} alt="..." />
         <div className="learn-container">
           <div className="learn-content">
             <h2>{learncontent}</h2>

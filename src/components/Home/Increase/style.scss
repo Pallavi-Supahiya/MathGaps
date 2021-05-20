@@ -3,6 +3,18 @@
 .increase {
   .container {
     background-color: #fff;
+    position: relative;
+    .dots-up{
+      position: absolute;
+      top: -32px;
+      left: 0;
+      display: none;
+    }
+    .dots-down{
+      position: absolute;
+      left: 0;
+      bottom: -42px;
+    }
   }
   &-container {
     padding: 20px 15px 46px 96px;

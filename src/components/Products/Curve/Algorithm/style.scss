@@ -1,45 +1,72 @@
 @import "../../../../styles/index.scss";
 
 .algorithm {
+  position: relative;
   .algo-container {
     padding: 27px 75px 90px 49px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: 992px){
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+    @media only screen and (max-width: 768px){
+      padding: 20px 0;
+    }
+    @media only screen and (max-width: 576px) {
+      padding: 20px;
+    }
   }
   .algo-heading {
-    padding-bottom: 49px;
+    padding-bottom: 4.4%;
     color: #0059ef;
     h3 {
       font-weight: 700;
+      align-self: center;
     }
   }
   .algo-content {
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: 768px){
+      justify-content: center;
+    }
     .algo-image {
       width: 50%;
+      img{
+        width: 100%;
+      }
+      @media only screen and (max-width: 768px){
+        width: 100%;
+      }
+    }
+    .algo-box{
+      max-width: 428px;
+      width: 50%;
+      @media only screen and (max-width: 768px){
+        width: 100%;
+        padding-top: 5%;
+      }
     }
     .algo-text {
-      width: 50%;
-      margin-left: 105px;
-      h6 {
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 34px;
-      }
+      
+    
       .text1,
       .text3 {
-        max-width: 428px;
+        
         width: auto;
       }
       .text2 {
-        margin: 53px 0 44px 0;
+        padding: 10% 0 7% 0;
         max-width: 390px;
         width: auto;
       }
     }
   }
+  
+   
 }

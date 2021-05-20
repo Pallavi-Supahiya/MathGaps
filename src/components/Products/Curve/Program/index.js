@@ -18,7 +18,7 @@ const Program = () => {
             <div className="program-image">
               <img className="program-img" src={image} alt="laptop" />
             </div>
-            <div className="program-text">
+            <div className="program-box"> <div className="program-text">
               <h6 className="text1">
                 Generated from test data to suit each individual learners needs.
               </h6>
@@ -26,7 +26,8 @@ const Program = () => {
                 Representing the optimal order in which students should fill all
                 knowledge gaps.
               </h6>
-            </div>
+            </div></div>
+           
           </div>
         </div>
       </div>

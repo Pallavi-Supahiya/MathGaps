@@ -3,6 +3,17 @@
 .learn {
   .container {
     background-color: #fafafa;
+    position: relative;
+    .dots-up{
+      position: absolute;
+      top: -32px;
+      left: 0;
+    }
+    .dots-down{
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+    }
   }
   &-container {
     padding: 41px 102px 41px 47px;

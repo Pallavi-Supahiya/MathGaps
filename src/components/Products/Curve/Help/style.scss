@@ -1,4 +1,8 @@
 @import "../../../../styles/index.scss";
+.outer-help{
+  max-width: 1440px;
+  margin: auto;
+}
 
 .help {
   max-width: 1440px;
@@ -8,9 +12,10 @@
   overflow: hidden;
 
   position: relative;
-  span {
+  h3,h5{ span {
     color: #0059ef;
-  }
+  }}
+ 
 
   &-image {
     padding-top: 58px;
@@ -19,24 +24,41 @@
   }
   &-container {
     padding: 54px 23px;
+    @media only screen and (max-width: 768px){
+    padding-left: 0;
+    padding-right: 0;
+    }
+    @media only screen and (max-width: 576px){
+    padding: 20px 0;
+    }
   }
   &-heading {
-    padding-bottom: 72px;
+    padding-bottom: 6.1%;
+    @media only screen and (max-width: 768px){
+      text-align: center;
+    }
+    @media only screen and (max-width: 576px){
+      padding-right:  20px;
+      padding-left:  20px;
+    }
   }
   &-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 10px;
-    column-gap: 40px;
-    padding-bottom: 94px;
+    column-gap: 30px;
+    padding-bottom: 7.7%;
+  }
+  &-box{
+    max-width: 270px;
+    height: 274px;
   }
   &-card {
     background-image: url("../../../../images/Products/Help/back.svg");
     position: relative;
-    max-width: 265px;
-    height: 263px;
-    width: 95%;
+    height: 100%;
+    width: 100%;
     flex: 0 0 25%;
 
     &-1 {
@@ -46,6 +68,12 @@
     &-2 {
       height: 50%;
       padding: 0 20px;
+      .help-card-content2{
+        font-size: 13px;
+  line-height: 28px;
+  margin: 0;
+  font-weight: 400;
+      }
     }
   }
   &-part2 {

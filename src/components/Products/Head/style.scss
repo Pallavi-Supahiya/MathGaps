@@ -11,6 +11,12 @@
   &-heading {
     padding: 27px 0 27px 16px;
     color: #fff;
+    @media only screen and (max-width: 768px){
+      padding: 0 0 0 16px;
+    }
+    @media only screen and (max-width: 576px){
+      padding: 0 20px;
+    }
   }
   &-images {
     display: flex;
@@ -18,11 +24,23 @@
     top: 0;
     width: 100%;
     right: -38%;
+    @media only screen and (max-width: 576px){
+display: none;
+    }
     img {
       width: 40%;
     }
+    .image1{
+      @media only screen and (max-width: 768px){
+      margin-right: -68px;
+      }
+    }
     .image2 {
       margin-left: -150px;
+      @media only screen and (max-width: 768px){
+        margin-left: 0;
+      }
+
     }
   }
 }

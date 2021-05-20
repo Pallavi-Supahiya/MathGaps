@@ -2,6 +2,7 @@ import React from "react";
 import Image from "../../../images/Home/Increase/img.svg";
 import { Button } from "../../Button";
 import { graphql, useStaticQuery } from "gatsby";
+import dots from "../../../images/dots.png"
 import "./style.scss";
 
 const query = graphql`
@@ -25,6 +26,8 @@ const Increase = () => {
   return (
     <div className="increase">
       <div className="container">
+      <img className="dots-up" src={dots} alt="..." />
+        <img className="dots-down" src={dots} alt="..." />
         <div className="increase-container">
           <div className="increase-image">
             <img src={Image} alt="image " />

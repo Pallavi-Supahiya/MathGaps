@@ -3,6 +3,17 @@
 .tools {
   .container {
     background-color: #f2f2f2;
+    position: relative;
+    .dots-up{
+      position: absolute;
+      top: -32px;
+      left: 0;
+    }
+    .dots-down{
+      position: absolute;
+      right: 0;
+      bottom: -42px;
+    }
   }
 
   &-container {

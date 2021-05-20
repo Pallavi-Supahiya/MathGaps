@@ -1,0 +1,18 @@
+@import "../../../styles/index.scss";
+
+.curve{
+  max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+     
+       &-div{
+        position: absolute;
+       }
+    &-image{
+      
+        
+       margin-top: -24%;
+    width: 91%;
+        
+    }
+}

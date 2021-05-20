@@ -29,6 +29,7 @@ const Help = () => {
   ];
 
   return (
+    <div className="outer-help">
     <div className="help">
       <div className="help-image">
         <img className="help-img" src={image} alt="ring" />
@@ -42,7 +43,7 @@ const Help = () => {
           </div>
           <div className="help-part2">
             <div className="help-cards">
-              <div className="help-card">
+            <div className="help-box"><div className="help-card">
                 <div className="help-card-1">
                   <h5 className="help-card-content1">
                     <span>Assess</span> whether your child has gaps in their
@@ -50,13 +51,14 @@ const Help = () => {
                   </h5>
                 </div>
                 <div className="help-card-2">
-                  <h6 className="help-card-content2">
+                  <span className="help-card-content2">
                     The presence of gaps reduces confidence, restricts
                     performance and makes new learning difficult.
-                  </h6>
+                  </span>
                 </div>
-              </div>
-              <div className="help-card">
+              </div></div>
+              
+              <div className="help-box"><div className="help-card">
                 <div className="help-card-1">
                   <h5 className="help-card-content1">
                     <span>Determine</span> whether your child actually needs a
@@ -64,25 +66,28 @@ const Help = () => {
                   </h5>
                 </div>
                 <div className="help-card-2">
-                  <h6 className="help-card-content2">
+                  <span className="help-card-content2">
                     Once students fill their gaps, they may not require ongoing
                     tutorals.
-                  </h6>
+                  </span>
                 </div>
-              </div>
-              <div className="help-card">
+              </div></div>
+              
+              <div className="help-box">   <div className="help-card">
                 <div className="help-card-1">
                   <h5 className="help-card-content1">
                     <span>Improve</span> the quality of ongoing tutorials.
                   </h5>
                 </div>
                 <div className="help-card-2">
-                  <h6 className="help-card-content2">
+                  <span className="help-card-content2">
                     Tutors will not need to dedicate time to diagnosis and past
                     content, increasing the amount of new content learnt.
-                  </h6>
+                  </span>
                 </div>
-              </div>
+              </div></div>
+           
+              <div className="help-box">
               <div className="help-card">
                 <div className="help-card-1">
                   <h5 className="help-card-content1">
@@ -90,11 +95,12 @@ const Help = () => {
                   </h5>
                 </div>
                 <div className="help-card-2">
-                  <h6 className="help-card-content2">
+                  <span className="help-card-content2">
                     Once your child has built the pre-requisite understanding,
                     classroom learning becomes significantly more effective.
-                  </h6>
+                  </span>
                 </div>
+              </div>
               </div>
             </div>
             <div className="help-arrow">
@@ -107,6 +113,7 @@ const Help = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

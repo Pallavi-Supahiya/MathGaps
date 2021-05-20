@@ -6,7 +6,7 @@ import Algorithm from "../components/Products/Curve/Algorithm";
 import Report from "../components/Products/Curve/Report";
 import Program from "../components/Products/Curve/Program";
 import Assistant from "../components/Products/Curve/Assistant";
-
+import Curve from "../components/Products/Curve"
 import Increase from "../components/Home/Increase";
 import First from "../components/Home/First";
 
@@ -18,10 +18,11 @@ const IndexPage = () => (
       <Seo title="Products" />
       <Head />
       <Help />
-      <Algorithm />
+      {/* <Algorithm />
       <Report />
       <Program />
-      <Assistant />
+      <Assistant /> */}
+      <Curve/>
       <Increase />
       <First />
     </Layout>

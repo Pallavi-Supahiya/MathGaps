@@ -1,6 +1,7 @@
 @import "../../../../styles/index.scss";
 
 .assistant {
+  
   .container {
     background-color: #fafafa;
   }
@@ -10,39 +11,70 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: 992px){
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+    @media only screen and (max-width: 768px){
+      padding: 20px 0;
+    }
   }
   .assistant-heading {
-    padding-bottom: 49px;
+    padding-bottom: 4.4%;
     color: #0059ef;
+    align-self: center;
     h3 {
       font-weight: 700;
     }
   }
   .assistant-content {
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: 768px){
+      justify-content: center;
+    }
     .assistant-image {
       width: 50%;
+      img{
+        width: 100%;
+        position: relative;
+      }
+      @media only screen and (max-width: 768px){
+        width: 100%;
+      }
+    }
+    .assistant-box{
+      max-width:484px;
+      width: 50%;
+      @media only screen and (max-width: 768px){
+        width: 100%;
+        padding-bottom: 5%;
+      }
     }
     .assistant-text {
-      width: 50%;
+      text-align: left;
+      @media only screen and (max-width: 768px){
+text-align: center;
+      }
     }
 
-    h6 {
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 34px;
-    }
+   
     .text1,
     .text2 {
-      max-width: 484px;
+      
       width: auto;
-      text-align: left;
+     
     }
     .text1 {
-      padding-bottom: 38px;
+      padding-bottom: 8%;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    &-container{
+      padding: 20px;
     }
   }
 }

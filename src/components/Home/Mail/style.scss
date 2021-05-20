@@ -3,6 +3,18 @@
 .mail {
   .container {
     background-color: #fff;
+    position: relative;
+    .dots-up{
+      position: absolute;
+      top: -32px;
+      right: 0;
+    }
+    .dots-down{
+      position: absolute;
+      right: 0;
+      bottom: -42px;
+      display: none;
+    }
   }
   .container {
     @media only screen and (min-width: 768px) {
@@ -97,5 +109,10 @@
     @media only screen and (max-width: 576px) {
       padding-bottom: 20px;
     }
+  }
+}
+.dots-down,.dots-up{
+  @media only screen and (max-width: 576px) {
+  width: 15%;
   }
 }

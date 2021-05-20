@@ -15,7 +15,7 @@ const Algorithm = () => {
             <div className="algo-image">
               <img className="algo-img" src={image} alt="laptop" />
             </div>
-            <div className="algo-text">
+            <div className="algo-box"> <div className="algo-text">
               <h6 className="text1">
                 Diagnostic assessment across all required skills in under 60
                 minutes.
@@ -27,7 +27,8 @@ const Algorithm = () => {
                 Complete the assessment at your own pace. Pause and restart as
                 you wish.
               </h6>
-            </div>
+            </div></div>
+           
           </div>
         </div>
       </div>

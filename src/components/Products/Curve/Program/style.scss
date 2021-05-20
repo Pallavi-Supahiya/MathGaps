@@ -1,20 +1,34 @@
 @import "../../../../styles/index.scss";
 
 .program {
+  position: relative;
   .program-container {
     padding: 27px 75px 90px 49px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: 992px) {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+    @media only screen and (max-width: 768px) {
+      padding: 20px 0;
+    }
+    @media only screen and (max-width: 576px) {
+      padding: 20px;
+    }
   }
   .program-heading {
-    padding-bottom: 49px;
+    padding-bottom: 4.4%;
     color: #0059ef;
+    align-self: center;
     h3 {
       font-weight: 700;
       .image-span {
+        padding-bottom: 1.3%;
         //   border-bottom: 5px solid linear-gradient(to right, #fff, #0059EF,#fff);5px
-        background-size: 100% 5px;
+        background-size: 100% 6px;
         background-position: 0% 100%, 0% 0%;
         background-repeat: no-repeat;
         border-radius: 4px;
@@ -25,27 +39,37 @@
   }
   .program-content {
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: 768px) {
+      justify-content: center;
+    }
     .program-image {
       width: 50%;
+      img {
+        width: 100%;
+      }
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    .program-box {
+      max-width: 484px;
+      width: 50%;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        padding-top: 5%;
+      }
     }
     .program-text {
-      width: 50%;
-      margin-left: 105px;
-      h6 {
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 34px;
-      }
+     
       .text1,
       .text2 {
-        max-width: 484px;
         width: auto;
       }
       .text1 {
-        padding-bottom: 39px;
+        padding-bottom: 8%;
       }
     }
   }
