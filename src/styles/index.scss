@@ -12,6 +12,7 @@
 html,
 body {
   overflow-x: hidden;
+  color: #252525;
 }
 body {
   background-color: #fff;
@@ -120,27 +121,34 @@ p{
 img {
   margin: 0;
 }
-.container{
- max-width: 1440px;
-  margin: auto;
-  padding: 50px 106px;
-  
-  @media only screen and (max-width: 1200px) {
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
     max-width: 1140px;
   }
-  @media only screen and (max-width: 1080px) {
-    padding:40px 80px;
-  }
-  @media only screen and (max-width: 992px) {
-    max-width: 960px;
-    padding:40px 60px;
-   
-  }
-  @media only screen and (max-width: 768px) {
-    max-width: 720px;
-}
-  @media only screen and (max-width: 576px) {
-    max-width: 540px;
-    padding: 40px 0px;
-}
 }

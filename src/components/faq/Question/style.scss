@@ -1,0 +1,66 @@
+
+@import "../../../styles/index.scss";
+
+.question {
+  background-color: #fff;
+  position: relative;
+  .container {
+   
+    .dots-up{
+      position: absolute;
+      top: -32px;
+      right: 0;
+    }
+    .dots-down{
+        display: none;
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+    }
+  }
+  &-container {
+    padding: 41px 0px 41px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    @media only screen and (max-width: 992px) {
+      padding: 20px 0px 20px 0px;
+    }
+
+    .question-content {
+        max-width: 735px;
+        width: 64%;
+    
+      h2 {
+        margin-bottom: 21px;
+        color: #252525;
+      }
+    }
+    .question-image {
+      width: 30%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    @media only screen and (max-width: 768px) {
+      justify-content: center;
+      text-align: center;
+      .question-content {
+        width: 100%;
+        @media only screen and (max-width: 575px) {
+          padding: 20px;
+        }
+      }
+      .question-image {
+        width: 100%;
+        display: block;
+        img {
+          @media only screen and (max-width: 575px) {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}

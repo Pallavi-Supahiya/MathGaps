@@ -1,9 +1,10 @@
 @import "../../../styles/index.scss";
 
 .curve{
-  max-width: 1440px;
+  
     margin: auto;
-    overflow: hidden;
+    
+    position: relative;
      
        &-div{
         position: absolute;
@@ -15,4 +16,13 @@
     width: 91%;
         
     }
+    
+}
+@media only screen and (max-width: 992px) {
+   .dots-up{
+      display: none;
+   }
+   .dots-down{
+      display: none;
+   }
 }

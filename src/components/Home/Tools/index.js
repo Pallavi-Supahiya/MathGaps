@@ -45,7 +45,7 @@ const Tools = () => {
         <div className="tools-container">
           <div className="tools-Heading">
             <div className="tools-Heading-content">
-              <h3>Why MathGaps is right for you.</h3>
+              <h3>Three tools to redefine learning.</h3>
               <div className="tools-Heading-Image">
                 <img src={line} alt="line"></img>
               </div>
@@ -57,9 +57,10 @@ const Tools = () => {
                 <div className="tools-card">
                   <div className="tools-card-image">
                     <div className="tools-card-image-bg">
-                      <img className="tools-card-icon" src={element.img}></img>
+                    <img className="tools-card-icon" src={element.img}></img>
                     </div>
                     <div className="tools-card-data">
+                    
                       <img
                         className="tools-card-number"
                         src={element.image}
@@ -70,10 +71,11 @@ const Tools = () => {
                       <span className="tools-card-content">
                         {element.content}
                       </span>
-                      <div className="tools-button">
-                        <Button className="tools-btn">More Info </Button>
                       </div>
-                    </div>
+                      <div className="tools-button">
+                        <Button className="tools-btn">More Info ></Button>
+                      </div>
+                  
                   </div>
                 </div>
               );

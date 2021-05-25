@@ -1,4 +1,6 @@
 {
+  "image1.svg": "static/image1-26490641a6c8ddaf076349f1115d2853.svg",
+  "image2.svg": "static/image2-364f0b4be8f2137147e811478425ed1c.svg",
   "img.svg": "static/img-057cdc855dd3bb6a5ac9258611c5598c.svg",
   "main.js": "render-page.js",
   "render-page.js.map": "render-page.js.map",
@@ -7,8 +9,18 @@
   "static/Data.svg": "static/Data-498736d938f8012172115b60cb554741.svg",
   "static/Image.svg": "static/Image-ba3d1a606e52b46a396c574a0d599ee7.svg",
   "static/Mailbox.svg": "static/Mailbox-b2e03f69074c2f9108c8873ace0db308.svg",
+  "static/assessment.svg": "static/assessment-d3e6f6f2a3a7188930bba86b61ba9b18.svg",
+  "static/easier.svg": "static/easier-49fa7c461df9888ad82013687da7b9af.svg",
   "static/formula.svg": "static/formula-38d9ff46887500fef887274cdf0dc825.svg",
+  "static/gaps.svg": "static/gaps-17ab77c6f9a1464cdd6abefc39da2253.svg",
   "static/girl.svg": "static/girl-44a53893d7a94c5abee8da0a96f6dcc0.svg",
+  "static/image1.svg": "static/image1-f72d244e637e21af7d5744d13ccc551e.svg",
+  "static/image2.svg": "static/image2-2b211d07d13e2f31ad0bb28d95a9ed25.svg",
+  "static/image3.svg": "static/image3-d662e16f82e0f5bbf2031fab5327a668.svg",
   "static/img.svg": "static/img-03afae96689213385136b54ee86a060d.svg",
+  "static/laptop.svg": "static/laptop-490e3ec2d9a0b634d87ce88fa8adb9ae.svg",
+  "static/lie.svg": "static/lie-78aa71fd4d842c9930e497b37df04516.svg",
+  "static/performance.svg": "static/performance-b0013dd8b20119197ad9c0361fead57f.svg",
+  "static/program.svg": "static/program-21dbfe44fa4bd9a7797f023b323708ed.svg",
   "static/web-browser 1.svg": "static/web-browser 1-131c80b8b79cedc52f8d51d3e11a3210.svg"
 }

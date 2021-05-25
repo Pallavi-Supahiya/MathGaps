@@ -2,6 +2,11 @@
 
 .program {
   position: relative;
+  .dots-up{
+    position: absolute;
+    top: 16%;
+    left: 6.5%;
+  }
   .program-container {
     padding: 27px 75px 90px 49px;
     display: flex;

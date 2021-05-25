@@ -22,6 +22,7 @@ const First = () => {
   console.log(firstdata);
   const firstcontent = firstdata.first;
   return (
+    <div className="outer-first">
     <div className="first">
       <div className="container">
         <div className="first-container">
@@ -34,6 +35,7 @@ const First = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

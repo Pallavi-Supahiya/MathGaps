@@ -1,34 +1,43 @@
 @import "../../../styles/index.scss";
 
+.outer-increase{
+  background-color: #fff;
+}
+
 .increase {
+  
+  position: relative;
+  .dots-up{
+    position: absolute;
+    top: -32px;
+    left: 0;
+    display: none;
+  }
+  .dots-down{
+    position: absolute;
+    left: 0;
+    bottom: -42px;
+  }
   .container {
-    background-color: #fff;
-    position: relative;
-    .dots-up{
-      position: absolute;
-      top: -32px;
-      left: 0;
-      display: none;
-    }
-    .dots-down{
-      position: absolute;
-      left: 0;
-      bottom: -42px;
-    }
+   
+   
   }
   &-container {
-    padding: 20px 15px 46px 96px;
+    padding: 20px 0px 46px 0px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     @media only screen and (max-width: 992px) {
-      padding: 20px 0px 20px 0px;
+      padding: 20px 0px 40px 0px;
     }
 
     .increase-content {
-      max-width: 591px;
+      max-width: 550px;
       width: 50%;
+      @media only screen and (min-width: 1440px) {
+        width: 100%;
+      }
       h2 {
         margin-bottom: 25px;
         color: #252525;

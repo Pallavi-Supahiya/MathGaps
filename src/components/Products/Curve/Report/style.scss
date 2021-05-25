@@ -1,9 +1,14 @@
 @import "../../../../styles/index.scss";
 
 .report {
+  background-color: #fafafa;
+  .dots-up{
+    position: absolute;
+    top: 28%;
+  }
  
   .container {
-    background-color: #fafafa;
+    
   }
 
   &-container {

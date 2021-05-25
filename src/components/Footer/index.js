@@ -54,7 +54,7 @@ const Footer = () => {
 export default Footer;
 
 const FooterContainer = styled.div`
-  padding: -10px 14px;
+padding: 10px 14px;
 `;
 const Footer1 = styled.div`
   display: flex;

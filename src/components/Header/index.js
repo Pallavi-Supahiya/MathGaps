@@ -31,7 +31,7 @@ const Navbar = () => {
     <div className="navbar">
       <IconContext.Provider value={{ color: "#000000" }}>
         <Nav active={scroll} click={click}>
-          <div className="container">
+          
             <div className="navbar-container">
               <Navlogo to="/">
                 <img className="mathgaps-logo" src={Logo} alt="mathgaps" />
@@ -44,10 +44,10 @@ const Navbar = () => {
                   <NavLinks to="/products">Products</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to="/">How it works</NavLinks>
+                  <NavLinks to="/working">How it works</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to="/">FAQs</NavLinks>
+                  <NavLinks to="/faq">FAQs</NavLinks>
                 </NavItem>
                 <NavItem>
                   <NavLinks to="/">
@@ -57,7 +57,7 @@ const Navbar = () => {
                 </NavItem>
               </NavMenu>
             </div>
-          </div>
+         
         </Nav>
       </IconContext.Provider>
     </div>
@@ -78,7 +78,6 @@ const MobileIcon = styled.div`
 
   @media screen and (max-width: 1080px) {
     display: block;
-    font-ize: 1.8rem;
     position: absolute;
     top: 10%;
     right: 0;
@@ -99,7 +98,7 @@ const NavMenu = styled.ul`
     height: 98vh;
     position: absolute;
     z-index: 1;
-    width: 50%;
+    width: 100%;
     /* display: flex; */
     right: 0;
     height: auto;
@@ -123,8 +122,8 @@ line-height: 28px;
 
 @media screen and (max-width: 1080px){
     text-align: center;
-    display: table
-
+    
+    justify-content: center;
     &:hover{
         
     }

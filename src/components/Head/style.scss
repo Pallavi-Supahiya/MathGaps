@@ -1,0 +1,50 @@
+@import "../../styles/index.scss";
+.all {
+  &-head {
+ 
+    margin: auto;
+    max-height: 213px;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../../images/Products/Head/blue.svg");
+  }
+  &-heading {
+    padding: 76px 0 76px 16px;
+    color: #fff;
+   
+     @media only screen and (max-width: 576px){
+      padding: 26px 20px;
+     }
+     h1{
+      @media only screen and (max-width: 768px){
+      font-size: 30px;
+      line-height: 40px;
+      }
+     }
+  }
+  &-images {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: -38%;
+    @media only screen and (max-width: 576px){
+display: none;
+    }
+    img {
+      width: 40%;
+    }
+    .image1{
+      @media only screen and (max-width: 768px){
+      margin-right: -68px;
+      }
+    }
+    .image2 {
+      margin-left: -150px;
+      @media only screen and (max-width: 768px){
+        margin-left: 0;
+      }
+
+    }
+  }
+}

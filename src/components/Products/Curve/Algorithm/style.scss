@@ -2,6 +2,12 @@
 
 .algorithm {
   position: relative;
+  .dots-up{
+    position: absolute;
+    /* top: 47px; */
+    top: 8%;
+    right: 0;
+  }
   .algo-container {
     padding: 27px 75px 90px 49px;
     display: flex;

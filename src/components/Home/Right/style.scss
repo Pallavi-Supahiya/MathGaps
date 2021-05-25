@@ -5,7 +5,7 @@
     padding: 56px 14px 103px 14px;
 
     @media only screen and (max-width: 768px) {
-      padding: 0px 0px 60px 0px;
+      padding: 20px 0px 60px 0px;
     }
   }
   &-Heading {
@@ -37,17 +37,27 @@
 
   &-Cards {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: center;
     row-gap: 17px;
     column-gap: 17px;
+    @media only screen and (max-width: 992px) {
+      flex-wrap: wrap;
+    }
     .card-image {
-      background-image: url("../../../images/Home/Right/Rectangle\ Copy\ 14.svg");
-      position: relative;
       max-width: 287px;
       height: 336px;
-      width: 95%;
-      flex: 0 0 25%;
+      background: #FAFAFA;
+      box-shadow: 2px 5px 4px rgb(0 0 0 / 8%);
+      position: relative;
+    
+      width: 25%;
+      @media only screen and (max-width: 992px) {
+        width: 50%;
+      }
+      @media only screen and (max-width: 860px) {
+        width: 100%;
+      }
 
       &-bg {
         display: flex;

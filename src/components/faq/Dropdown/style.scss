@@ -1,0 +1,76 @@
+@import "../../../styles/index.scss";
+
+.dropdown{
+    background-color: #fafafa;
+
+
+    .container{
+
+    }
+    &-container{
+        max-width: 795px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 12.5% 0;
+        .faq-heading{
+            padding-bottom: 8%;
+            h2{
+                font-weight: bold;
+font-size: 34px;
+line-height: 41px;
+            }
+            span{
+                color: #0059EF;
+            }
+    }
+    .dropcontainer{
+        box-shadow: inset 0px -2px 0px rgb(0 89 239 / 20%);
+        margin-bottom: 30px;
+        
+      
+        }
+       
+    }
+        .dropdown-div{
+            display: flex;
+            align-items: center;
+            padding: 4% 0;
+            .add{
+                padding-right: 19px;
+                display: flex;
+            }
+            .minus{
+                padding-right: 3.4%;
+                display: flex;
+            }
+            ul{
+                text-align: left;
+                font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+@media only screen and (max-width: 576px) {
+    font-size: 20px;
+line-height: 24px;
+}
+
+
+            }
+          
+        }
+        .answerdrop{
+            padding: 0 3% 4% 4.9%;
+            text-align: left;
+        }
+        .answer-p{
+            font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+
+    @media only screen and (max-width: 576px) {
+    font-size: 16px;
+    line-height: 20px;
+    }
+        }
+    }
+

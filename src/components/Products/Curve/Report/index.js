@@ -1,10 +1,12 @@
 import React from "react";
 import image from "../../../../images/Products/laptop.svg";
+import dots from "../../../../images/dots.png";
 import "./style.scss";
 
 const Report = () => {
   return (
     <div className="report">
+         <img className="dots-up" src={dots} alt="..." />
       <div className="container">
         <div className="report-container">
           <div className="report-heading">

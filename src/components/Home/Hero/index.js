@@ -35,7 +35,7 @@ const Heero = () => {
             <h1>A new tool to improve maths performance</h1>
 
             <p>{data2}</p>
-            <Button primary="true">Register your interest</Button>
+            <Button primary="true" className="banner-button">Register your interest</Button>
           </div>
           <div className="Hero-Image">
             <img src={Formula} alt="formulas" />

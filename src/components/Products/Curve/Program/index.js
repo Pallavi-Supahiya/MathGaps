@@ -1,10 +1,12 @@
 import React from "react";
 import image from "../../../../images/Products/laptop.svg";
+import dots from "../../../../images/dots.png";
 import "./style.scss";
 
 const Program = () => {
   return (
     <div className="program">
+       <img className="dots-up" src={dots} alt="..." />
       <div className="container">
         <div className="program-container">
           <div className="program-heading">

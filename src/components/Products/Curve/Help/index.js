@@ -2,6 +2,9 @@ import React from "react";
 import image from "../../../../images/Products/Help/ring.svg";
 import buttonbg from "../../../../images/Products/Help/buttonbg.svg";
 import arrow from "../../../../images/Products/Help/arrow.svg";
+import dots from "../../../../images/dots.png";
+
+
 import "./style.scss";
 
 const Help = () => {
@@ -34,7 +37,10 @@ const Help = () => {
       <div className="help-image">
         <img className="help-img" src={image} alt="ring" />
       </div>
+      <img className="dots-up" src={dots} alt="..." />
       <div className="container">
+     
+        {/* <img className="dots-down" src={dots} alt="..." /> */}
         <div className="help-container">
           <div className="help-heading">
             <h3>
@@ -105,7 +111,7 @@ const Help = () => {
             </div>
             <div className="help-arrow">
               <div className="help-button">
-                <img className="buttonbg" src={buttonbg} alt="button" />
+              <button className="buttonbg"> </button>
 
                 <img className="arrow" src={arrow} alt="button" />
               </div>

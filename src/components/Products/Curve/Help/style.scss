@@ -1,17 +1,19 @@
 @import "../../../../styles/index.scss";
 .outer-help{
-  max-width: 1440px;
-  margin: auto;
+
 }
 
 .help {
-  max-width: 1440px;
-  margin: auto;
+  
   background-color: #f2f2f2;
   min-height: 762px;
   overflow: hidden;
 
   position: relative;
+  .dots-up{
+    position: absolute;
+    top: 10%;
+  }
   h3,h5{ span {
     color: #0059ef;
   }}
@@ -34,7 +36,7 @@
   }
   &-heading {
     padding-bottom: 6.1%;
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 1200px){
       text-align: center;
     }
     @media only screen and (max-width: 576px){
@@ -44,30 +46,36 @@
   }
   &-cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     row-gap: 10px;
     column-gap: 30px;
     padding-bottom: 7.7%;
+    @media only screen and (max-width: 1200px){
+      flex-wrap: wrap;
+    }
   }
-  &-box{
-    max-width: 270px;
-    height: 274px;
+  &-box{  max-width: 266px;
+    height: 263px;
+    background: white;
+    width: 25%;
+    position: relative;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 12px;
+    @media only screen and (max-width: 1200px){
+      width: 100%;
+    }
+  
   }
   &-card {
-    background-image: url("../../../../images/Products/Help/back.svg");
-    position: relative;
-    height: 100%;
-    width: 100%;
-    flex: 0 0 25%;
+  
 
     &-1 {
       height: 50%;
-      padding: 20px 20px 20px 20px;
+  padding: 8%;
     }
     &-2 {
       height: 50%;
-      padding: 0 20px;
+      padding: 0 8%;
       .help-card-content2{
         font-size: 13px;
   line-height: 28px;
@@ -80,6 +88,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  button{
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 44px;
+    background: linear-gradient(
+277.96deg
+, rgba(0, 89, 239, 0.8) 2.6%, #0059EF 99.7%);
+    border-radius: 4px;
   }
   &-arrow {
     position: relative;

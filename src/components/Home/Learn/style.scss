@@ -1,9 +1,10 @@
 @import "../../../styles/index.scss";
 
 .learn {
+  background-color: #fafafa;
+  position: relative;
   .container {
-    background-color: #fafafa;
-    position: relative;
+   
     .dots-up{
       position: absolute;
       top: -32px;
@@ -16,7 +17,7 @@
     }
   }
   &-container {
-    padding: 41px 102px 41px 47px;
+    padding: 41px 0px 41px 0px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

@@ -1,0 +1,52 @@
+@import "../../../styles/index.scss";
+
+.soon{
+    background-color: #fafafa;
+
+
+
+    .container{
+          padding: 8% 15px; ;
+    }
+    &-container{
+        background-color: #fff;
+        text-align: center;
+    }
+    .sandclock-container{
+        padding: 4%;
+
+img{
+    padding-bottom: 6%;
+    @media only screen and (max-width: 575px) {
+        width: 70%;
+    }
+}
+
+        h3{
+            font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    @media only screen and (max-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media only screen and (max-width: 575px) {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 30px;
+    }
+        }
+        p{
+            font-size: 18px;
+    line-height: 34px;
+    @media only screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 30px;
+    }
+    @media only screen and (max-width: 575px) {
+    font-size: 14px;
+    line-height: 24px;
+    }
+        }
+    }
+}

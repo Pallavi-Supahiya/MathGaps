@@ -1,9 +1,10 @@
 @import "../../../styles/index.scss";
 
 .mail {
+  background-color: #fff;
+  position: relative;
   .container {
-    background-color: #fff;
-    position: relative;
+ 
     .dots-up{
       position: absolute;
       top: -32px;
@@ -55,14 +56,15 @@
         color: #252525;
       }
       .mail-form {
-        display: flex;
-        flex-direction: column;
+        
+      
         input {
           border: none;
           border-bottom: 1px solid #0059ef;
           width: 100%;
           padding-bottom: 18.5px;
           margin-bottom: 59.5px;
+          z-index: 1000 !important;
         }
         .button-div {
           display: flex;
@@ -85,12 +87,13 @@
     }
     .mail-image {
       width: 40%;
+      text-align: right;
     }
 
     @media only screen and (max-width: 768px) {
       justify-content: center;
       text-align: center;
-      padding: 0px 0 40px 0px;
+      padding: 20px 0 40px 0px;
       .mail-content {
         width: 100%;
         @media only screen and (max-width: 576px) {
