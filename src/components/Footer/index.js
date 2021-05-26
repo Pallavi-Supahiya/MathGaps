@@ -24,12 +24,12 @@ const Footer = () => {
                 </Links>
               </div>
               <div className="NavLink">
-                <Links to="/" className="nav">
+                <Links to="/contact" className="nav">
                   <span className="footer-span">Contact</span>
                 </Links>
               </div>
               <div className="NavLink">
-                <Links to="/" className="nav3">
+                <Links to="/register" className="nav3">
                   <span className="footer-span">Get Started</span>
                 </Links>
               </div>

@@ -34,6 +34,7 @@ let data = [
 
 const Tutor = () => {
     return (
+        <div className="outer-tutor">
         <div className="tutor">
 
             <div className="container">
@@ -83,6 +84,7 @@ const Tutor = () => {
                 </div>
             </div>
             <Learn />
+        </div>
         </div>
     )
 }

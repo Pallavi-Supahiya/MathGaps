@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "../../../images/Home/First/img.svg";
 import { Button } from "../../Button";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import "./style.scss";
 
 const query = graphql`
@@ -28,7 +28,7 @@ const First = () => {
         <div className="first-container">
           <div className="first-content">
             <h2>{firstcontent.first}</h2>
-            <Button big="true">Register Your Interest</Button>
+           <Link to="/register"><Button big="true">Register Your Interest ></Button></Link> 
           </div>
           <div className="first-image">
             <img src={Image} alt="image " />

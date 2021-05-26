@@ -6,14 +6,33 @@
 
 
     .container{
-          padding: 8% 15px; ;
+          padding: 8% 15px; 
+          
+
+
+     .dots-div{
+        position: relative;
+         .dots-up{
+        position: absolute;
+        right: -2%;
+        top: -5%;
+      }
+      .dots-down{
+        position: absolute;
+        left: -3%;
+        bottom: -5%;
+      }}      
+    
+
     }
     &-container{
         background-color: #fff;
         text-align: center;
+        position: relative;
     }
     .sandclock-container{
         padding: 4%;
+       
 
 img{
     padding-bottom: 6%;

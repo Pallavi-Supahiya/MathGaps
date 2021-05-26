@@ -28,11 +28,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar">
+    <div className="navbars">
       <IconContext.Provider value={{ color: "#000000" }}>
         <Nav active={scroll} click={click}>
           
-            <div className="navbar-container">
+            <div className="navbars-container">
               <Navlogo to="/">
                 <img className="mathgaps-logo" src={Logo} alt="mathgaps" />
               </Navlogo>
@@ -50,7 +50,7 @@ const Navbar = () => {
                   <NavLinks to="/faq">FAQs</NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to="/">
+                  <NavLinks to="/register">
                     {" "}
                     <Button>Register Your Interest</Button>
                   </NavLinks>

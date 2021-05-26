@@ -1,13 +1,21 @@
-HTML CSSResult Skip Results Iframe
-body {
-  color: #213546;
-  background: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+.working{
+
+background-color: #f2f2f2;
+&-curve{
+  position: absolute;
+  right: 0;
+  width: 48%;
+  @media (min-width: 1600px) {
+    width: 30%;
+  }
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
 
 .title {
   position: relative;
-  margin-top: 30px;
+  padding-top: 70px;
   width: 100%;
   text-align: center;
 }
@@ -67,23 +75,33 @@ body {
   top: 0;
   left: 50%;
   margin-left: -1px;
-  background: #4F84C4;
+  // background:  rgba(37, 37, 37, 0.3);
+  border: 1px dashed rgba(37, 37, 37, 0.3);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .timeline .row.timeline-left,
 .timeline .row.timeline-right .timeline-date {
   text-align: right;
+  align-items: center;
+ 
 }
 
 .timeline .row.timeline-right,
 .timeline .row.timeline-left .timeline-date {
   text-align: left;
+  align-items: center;
+ .timeline-text{
+  @media (min-width: 768px) {
+  float: right;
+  }
+ }
 }
 
 .timeline .timeline-date {
   font-size: 14px;
   font-weight: 600;
-  margin: 41px 0 0 0;
+
 }
 
 .timeline .timeline-date::after {
@@ -93,7 +111,7 @@ body {
   width: 14px;
   height: 14px;
   top: 45px;
-  background: linear-gradient(#4F84C4, #00539C);
+ background-image: url("../../images/ovals.svg");
   box-shadow: 0 0 5px rgba(0, 0, 0, .4);
   border-radius: 15px;
   z-index: 1;
@@ -115,9 +133,7 @@ body {
   padding: 20px;
  
   border-radius: 6px;
-  background: #ffffff;
-  max-width: 460px;
-  text-align: left;
+
 }
 
 .timeline .timeline-launch {
@@ -131,7 +147,7 @@ body {
 
 .timeline .timeline-box::after,
 .timeline .timeline-box::before {
-  content: '';
+  
   display: block;
   position: absolute;
   width: 0;
@@ -164,7 +180,7 @@ body {
 .timeline .timeline-box::before {
   top: 25px;
   border-color: transparent transparent transparent #dddddd;
-  
+ 
 }
 
 .timeline .row.timeline-right .timeline-box::after {
@@ -210,16 +226,16 @@ body {
 }
 
 .timeline .timeline-text h3 {
-    font-size: 26px;
-    line-height: 50px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 50px;
+  font-weight: 700;
+  
 }
 
 .timeline .timeline-text p {
-    font-size: 18px;
-    line-height: 34px;
-    font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -269,5 +285,27 @@ body {
     margin-left: 0;
   }
 }
+.ovals-oval{
+  width: 10%;
+  padding: 0;
+  position: absolute;
+  left: 45%;
 
-
+  @media only screen and (max-width: 768px) {
+  left: 3.5%;
+  }
+  @media only screen and (max-width: 576px) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .timeline-date{
+    width: 70%;
+  }
+  .timeline-end{
+    img{
+      width: 70%;
+    }
+  }
+}
+}

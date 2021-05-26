@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "../../../images/Home/Increase/img.svg";
 import { Button } from "../../Button";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import dots from "../../../images/dots.png"
 
 import "./style.scss";
@@ -37,7 +37,7 @@ const Increase = () => {
           </div>
           <div className="increase-content">
             <h2>{increasecontent.increase}</h2>
-            <Button big="true">How MathGaps Works</Button>
+           <Link to="/working"> <Button big="true">How MathGaps Works ></Button></Link>
           </div>
         </div>
       </div>

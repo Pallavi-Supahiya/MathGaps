@@ -1,11 +1,15 @@
 import React from 'react'
 import sandclock from "../../../images/Faqs/sandclock.svg"
+import dots from "../../../images/dots.png"
 import "./style.scss"
 
 const Soon = () => {
     return (
         <div className="soon">
             <div className="container">
+                <div className="dots-div">
+            <img className="dots-up" src={dots} alt="..." />
+        <img className="dots-down" src={dots} alt="..." />
                 <div className="soon-container">
                     <div className="sandclock-container">
                         <div className="sandclock-image">
@@ -21,6 +25,7 @@ const Soon = () => {
                 </div>
             </div>
             
+        </div>
         </div>
     )
 }

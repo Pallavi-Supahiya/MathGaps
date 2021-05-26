@@ -20,12 +20,7 @@ const working = () => {
       <Seo title="How It Works" /> 
       <Head data={"How MathGaps Works"}/>
       <Working />
-      <Assesssment />
-      <Lie />
-      <Performance />
-      <Program/>
-      <Gaps />
-      <Easier/>
+     
       <Tutor/>
       <First/>
       </Layout >

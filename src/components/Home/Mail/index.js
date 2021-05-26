@@ -11,6 +11,7 @@ const Mail = () => {
 
    
     <div className="mail">
+      <img src={Image} alt="image" className="big-image" />
       <div className="container">
       <img className="dots-up" src={dots} alt="..." />
         <img className="dots-down" src={dots} alt="..." />

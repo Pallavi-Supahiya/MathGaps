@@ -3,6 +3,7 @@ import Image from "../../../images/Home/Learn/Image.svg";
 import { Button } from "../../Button";
 
 import { graphql, useStaticQuery } from "gatsby";
+import {Link} from "gatsby"
 import dots from "../../../images/dots.png"
 import "./style.scss";
 
@@ -31,7 +32,7 @@ const Learn = () => {
         <div className="learn-container">
           <div className="learn-content">
             <h2>{learncontent}</h2>
-            <Button big="true">MathGaps Products</Button>
+           <Link to="/products"><Button big="true">MathGaps Products ></Button></Link> 
           </div>
           <div className="learn-image">
             <img src={Image} alt="image " />

@@ -1,0 +1,163 @@
+@import "../../../styles/index.scss";
+
+.mailbox {
+  background-color: #fff;
+  position: relative;
+  .container {
+ 
+    .dots-up{
+      position: absolute;
+      bottom: 12%;
+      right: 0;
+    }
+    .dots-down{
+      position: absolute;
+      right: 0;
+      bottom: -42px;
+      display: none;
+    }
+  }
+  .container {
+    @media only screen and (min-width: 768px) {
+      padding-right: 0;
+    }
+  }
+  &-container {
+    padding: 12.4% 0;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    @media only screen and (max-width: 992px) {
+      padding: 70px 0 40px 0px;
+    }
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+    .mailbox-all{
+        display: contents;
+    }
+
+    .mailbox-content {
+      max-width:  592px;
+
+      width: 60%;
+      @media only screen and (min-width: 1440px) {
+        width: 100%;
+      }
+      .mailbox-heading{
+        @media only screen and (max-width: 768px) {
+        text-align: center;
+        }
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 12px;
+        color: #0059ef;
+      }
+      h2 {
+          font-weight: 700;
+          font-size: 34px;
+line-height: 41px;
+        margin-bottom: 80px;
+        color: #252525;
+      }
+      .mailbox-form {
+        label{
+            display: block;
+            height: 90px;
+            overflow: auto;
+            position: relative;
+        }
+      
+        input {
+            position: absolute;
+            top: 40px;
+            height: 30px;
+          border: none;
+          border-bottom: 1px solid rgba(37, 37, 37, 0.2);;
+          width: 100%;
+          
+          z-index: 1000 !important;
+        }
+        input ~ span{
+            transition: top 1s ease;
+            position: absolute;
+            top: 20px;
+            font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: rgba(37, 37, 37, 0.5);
+        }
+        input:focus{
+            border-bottom:1px solid #0059EF;
+        }
+        input:focus ~ span{
+            top: 0px;
+            font-size: 16px;
+line-height: 20px;
+color: #0059EF;
+        }
+        .button-div {
+          padding-top: 15px;
+          display: flex;
+          flex-flow: row-reverse;
+          button {
+            font-size: 24px;
+            line-height: 34px;
+            border: none;
+            border-radius: 4px;
+            background-color: #0059ef;
+            color: white;
+            width: 100%;
+            padding: 8px 0;
+            text-decoration: none;
+            @media only screen and (max-width: 576px) {
+              font-size: 18px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+    .mailbox-image {
+      width: 40%;
+      text-align: right;
+    }
+
+    @media only screen and (max-width: 768px) {
+      justify-content: center;
+      text-align: center;
+      padding: 20px 0 40px 0px;
+      .mailbox-content {
+        width: 100%;
+        text-align: justify;
+        @media only screen and (max-width: 576px) {
+          padding: 20px;
+        }
+      }
+      .mailbox-image {
+        width: 100%;
+        img {
+          @media only screen and (max-width: 575px) {
+            width: 70%;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      padding-bottom: 20px;
+    }
+  }
+}
+.dots-down,.dots-up{
+  @media only screen and (max-width: 576px) {
+  width: 15%;
+  }
+}

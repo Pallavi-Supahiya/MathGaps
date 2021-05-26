@@ -1,14 +1,17 @@
 @import "../../../styles/index.scss";
+.outer-tutor{
+    background-color: #f2f2f2;
+}
 
 .tutor {
     position: relative;
-    background-color: #f2f2f2;
+    
     .learn{
         background-color: #FFFFFF;
     }
  
   &-container {
-    padding: 0 18px;
+    padding: 9% 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,7 +121,7 @@ height: auto;
     text-align: center;
     .part3-quote{max-width: 1046px;
         width: 100%;
-        padding: 30px;}
+        padding: 7% 30px 0 30px;}
     
     span{
         color: #0059EF;
